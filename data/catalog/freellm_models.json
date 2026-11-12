@@ -1,0 +1,600 @@
+{
+  "models": [
+    {
+      "provider": "NVIDIA NIM",
+      "display_name": "z-ai/glm-5.2",
+      "model_id": "`z-ai/glm-5.2`",
+      "context_label": "1M",
+      "rate_limit": "Up to 40 RPM"
+    },
+    {
+      "provider": "NVIDIA NIM",
+      "display_name": "z-ai/glm-5.1",
+      "model_id": "`z-ai/glm-5.1`",
+      "context_label": "202K",
+      "rate_limit": "Up to 40 RPM"
+    },
+    {
+      "provider": "NVIDIA NIM",
+      "display_name": "poolside/laguna-xs-2.1",
+      "model_id": "`poolside/laguna-xs-2.1`",
+      "context_label": "262K",
+      "rate_limit": "Up to 40 RPM"
+    },
+    {
+      "provider": "ModelScope",
+      "display_name": "MiniMax-M2.5-highspeed",
+      "model_id": "`MiniMax/MiniMax-M2.5`",
+      "context_label": "204K",
+      "rate_limit": "See provider"
+    },
+    {
+      "provider": "ModelScope",
+      "display_name": "Qwen/Qwen3.5-35B-A3B",
+      "model_id": "`qwen-qwen3-5-35b-a3b`",
+      "context_label": "256K",
+      "rate_limit": "2,000 RPD total; &lt;=500.."
+    },
+    {
+      "provider": "ModelScope",
+      "display_name": "Qwen/Qwen3.5-27B",
+      "model_id": "`qwen-qwen3-5-27b`",
+      "context_label": "256K",
+      "rate_limit": "2,000 RPD total; &lt;=500.."
+    },
+    {
+      "provider": "Cloudflare Workers AI",
+      "display_name": "Mistral 7B",
+      "model_id": "`@cf/mistral/mistral-7b-instruct-v0.1`",
+      "context_label": "32K",
+      "rate_limit": "See provider"
+    },
+    {
+      "provider": "Cloudflare Workers AI",
+      "display_name": "Qwen 1.5 7B",
+      "model_id": "`@cf/qwen/qwen1.5-7b-chat`",
+      "context_label": "32K",
+      "rate_limit": "See provider"
+    },
+    {
+      "provider": "Cloudflare Workers AI",
+      "display_name": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+      "model_id": "`@cf/meta/llama-3.3-70b-instruct-fp8-fast`",
+      "context_label": "24K",
+      "rate_limit": "10K neurons/day (shared)"
+    },
+    {
+      "provider": "OpenRouter",
+      "display_name": "Crouton Alpha",
+      "model_id": "`stealth/crouton-alpha`",
+      "context_label": "1M",
+      "rate_limit": "See provider"
+    },
+    {
+      "provider": "OpenRouter",
+      "display_name": "NVIDIA: Nemotron 3 Ultra (free)",
+      "model_id": "`nvidia/nemotron-3-ultra-550b-a55b:free`",
+      "context_label": "1M",
+      "rate_limit": "See provider"
+    },
+    {
+      "provider": "OpenRouter",
+      "display_name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+      "model_id": "`nvidia/nemotron-3.5-super-vl:free`",
+      "context_label": "1M",
+      "rate_limit": "See provider"
+    },
+    {
+      "provider": "OpenCode Zen",
+      "display_name": "big-pickle",
+      "model_id": "`big-pickle`",
+      "context_label": "0",
+      "rate_limit": "-"
+    },
+    {
+      "provider": "OpenCode Zen",
+      "display_name": "DeepSeek V4 Flash",
+      "model_id": "`deepseek-v4-flash-free`",
+      "context_label": "1M",
+      "rate_limit": "-"
+    },
+    {
+      "provider": "OpenCode Zen",
+      "display_name": "MiMo-V2.5",
+      "model_id": "`mimo-v2.5-free`",
+      "context_label": "1M",
+      "rate_limit": "-"
+    },
+    {
+      "provider": "Kilo Code",
+      "display_name": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "model_id": "`nvidia/nemotron-3-ultra-550b-a55b:free`",
+      "context_label": "1M",
+      "rate_limit": "200 req/hr"
+    },
+    {
+      "provider": "Kilo Code",
+      "display_name": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoni..",
+      "model_id": "`nvidia/nemotron-3-nano-omni-30b-a3b-re..`",
+      "context_label": "256K",
+      "rate_limit": "200 req/hr"
+    },
+    {
+      "provider": "Kilo Code",
+      "display_name": "cohere/north-mini-code:free",
+      "model_id": "`cohere/north-mini-code:free`",
+      "context_label": "256K",
+      "rate_limit": "200 req/hr"
+    },
+    {
+      "provider": "LLM7.io",
+      "display_name": "gpt-oss:20b",
+      "model_id": "`gpt-oss-20b`",
+      "context_label": "128K",
+      "rate_limit": "60 RPM, 250 req/hr"
+    },
+    {
+      "provider": "LLM7.io",
+      "display_name": "mistral-Nemo-Instruct-2407",
+      "model_id": "`mistral-Nemo-Instruct-2407`",
+      "context_label": "128K",
+      "rate_limit": "60 RPM, 250 req/hr"
+    },
+    {
+      "provider": "LLM7.io",
+      "display_name": "nemotron-3-nano:30b",
+      "model_id": "`nemotron-3-nano-30b`",
+      "context_label": "1M",
+      "rate_limit": "60 RPM, 250 req/hr"
+    },
+    {
+      "provider": "Google Gemini",
+      "display_name": "Gemini 3.8 Flash",
+      "model_id": "`gemini-3.8-flash`",
+      "context_label": "1M",
+      "rate_limit": "-"
+    },
+    {
+      "provider": "Google Gemini",
+      "display_name": "Gemini 3.6 Flash",
+      "model_id": "`gemini-3.6-flash`",
+      "context_label": "1M",
+      "rate_limit": "-"
+    },
+    {
+      "provider": "Google Gemini",
+      "display_name": "Gemini 3.5 Flash-Lite",
+      "model_id": "`gemini-3.5-flash-lite`",
+      "context_label": "1M",
+      "rate_limit": "-"
+    },
+    {
+      "provider": "Ollama Cloud",
+      "display_name": "gpt-oss:120b",
+      "model_id": "`gpt-oss:120b`",
+      "context_label": "128K",
+      "rate_limit": "1 concurrent request, m.."
+    },
+    {
+      "provider": "Ollama Cloud",
+      "display_name": "nemotron-3-ultra",
+      "model_id": "`nemotron-3-ultra`",
+      "context_label": "256K",
+      "rate_limit": "1 concurrent request, m.."
+    },
+    {
+      "provider": "Ollama Cloud",
+      "display_name": "deepseek-v4-pro",
+      "model_id": "`deepseek-v4-pro`",
+      "context_label": "1M",
+      "rate_limit": "Session/weekly limits"
+    },
+    {
+      "provider": "OVHcloud AI Endpoints",
+      "display_name": "Qwen3.5-397B-A17B",
+      "model_id": "`qwen3.5-397b-a17b`",
+      "context_label": "262K",
+      "rate_limit": "2 RPM (anonymous)"
+    },
+    {
+      "provider": "OVHcloud AI Endpoints",
+      "display_name": "gpt-oss-120b",
+      "model_id": "`gpt-oss-120b`",
+      "context_label": "131K",
+      "rate_limit": "2 RPM (anonymous)"
+    },
+    {
+      "provider": "OVHcloud AI Endpoints",
+      "display_name": "Meta-Llama-3_3-70B-Instruct",
+      "model_id": "`meta-llama-3_3-70b-instruct`",
+      "context_label": "131K",
+      "rate_limit": "2 RPM (anonymous)"
+    },
+    {
+      "provider": "Mistral AI",
+      "display_name": "Mistral 7B",
+      "model_id": "`open-mistral-7b`",
+      "context_label": "32K",
+      "rate_limit": "See provider"
+    },
+    {
+      "provider": "Mistral AI",
+      "display_name": "Mixtral 8x7B",
+      "model_id": "`open-mixtral-8x7b`",
+      "context_label": "32K",
+      "rate_limit": "See provider"
+    },
+    {
+      "provider": "Mistral AI",
+      "display_name": "Mistral Medium 3.5 (128B)",
+      "model_id": "`mistral-medium-3-5-128b`",
+      "context_label": "256K",
+      "rate_limit": "~1 RPS, 500K TPM"
+    },
+    {
+      "provider": "Groq",
+      "display_name": "Moonshot Kimi K2",
+      "model_id": "`moonshotai/kimi-k2-instruct`",
+      "context_label": "131K",
+      "rate_limit": "See provider"
+    },
+    {
+      "provider": "Groq",
+      "display_name": "Moonshot Kimi K2 0905",
+      "model_id": "`moonshotai/kimi-k2-instruct-0905`",
+      "context_label": "131K",
+      "rate_limit": "See provider"
+    },
+    {
+      "provider": "Groq",
+      "display_name": "groq/compound",
+      "model_id": "`groq/compound`",
+      "context_label": "131K",
+      "rate_limit": "30 RPM, 250 RPD"
+    },
+    {
+      "provider": "Cohere",
+      "display_name": "Command A+ (218B)",
+      "model_id": "`command-a-218b`",
+      "context_label": "128K",
+      "rate_limit": "20 RPM"
+    },
+    {
+      "provider": "Cohere",
+      "display_name": "Command A (111B)",
+      "model_id": "`command-a-111b`",
+      "context_label": "256K",
+      "rate_limit": "20 RPM"
+    },
+    {
+      "provider": "Cohere",
+      "display_name": "Command R+",
+      "model_id": "`command-r`",
+      "context_label": "128K",
+      "rate_limit": "20 RPM"
+    },
+    {
+      "provider": "Aion Labs",
+      "display_name": "aion-labs/aion-2.0",
+      "model_id": "`aion-labs-aion-2-0`",
+      "context_label": "128K",
+      "rate_limit": "15 RPM, 20K TPD"
+    },
+    {
+      "provider": "Aion Labs",
+      "display_name": "aion-labs/aion-rp-llama-3.1-8b",
+      "model_id": "`aion-labs-aion-rp-llama-3-1-8b`",
+      "context_label": "32K",
+      "rate_limit": "15 RPM, 20K TPD"
+    },
+    {
+      "provider": "Aion Labs",
+      "display_name": "aion-labs/aion-3.0",
+      "model_id": "`aion-labs-aion-3-0`",
+      "context_label": "128K",
+      "rate_limit": "15 RPM, 20K TPD"
+    },
+    {
+      "provider": "Hugging Face",
+      "display_name": "Meta-Llama-3.1-8B-Instruct",
+      "model_id": "`meta-llama-3-1-8b-instruct`",
+      "context_label": "128K",
+      "rate_limit": "Credit-metered"
+    },
+    {
+      "provider": "Hugging Face",
+      "display_name": "gemma-3-4b-it",
+      "model_id": "`google/gemma-3-4b-it`",
+      "context_label": "131K",
+      "rate_limit": "Credit-metered"
+    },
+    {
+      "provider": "Hugging Face",
+      "display_name": "phi-4",
+      "model_id": "`phi-4`",
+      "context_label": "16K",
+      "rate_limit": "Credit-metered"
+    },
+    {
+      "provider": "Z AI (Zhipu AI)",
+      "display_name": "GLM-4.7-Flash",
+      "model_id": "`glm-4.7-flash`",
+      "context_label": "200K",
+      "rate_limit": "1 concurrent request"
+    },
+    {
+      "provider": "Z AI (Zhipu AI)",
+      "display_name": "GLM-4.5-Flash (retirement announced)",
+      "model_id": "`glm-4-5-flash-retirement-announced`",
+      "context_label": "128K",
+      "rate_limit": "1 concurrent request"
+    },
+    {
+      "provider": "Z AI (Zhipu AI)",
+      "display_name": "GLM-4.6V-Flash",
+      "model_id": "`glm-4.6v-flash`",
+      "context_label": "128K",
+      "rate_limit": "1 concurrent request"
+    },
+    {
+      "provider": "Cerebras",
+      "display_name": "Llama 3.1 70B",
+      "model_id": "`llama3.1-70b`",
+      "context_label": "131K",
+      "rate_limit": "See provider"
+    },
+    {
+      "provider": "Cerebras",
+      "display_name": "zai-glm-4.7 (deprecated Aug 2026)",
+      "model_id": "`zai-glm-4-7-deprecated-aug-2026`",
+      "context_label": "131K",
+      "rate_limit": "5 RPM, 30K TPM, 1M TPD"
+    },
+    {
+      "provider": "Cerebras",
+      "display_name": "zai-glm-4.7",
+      "model_id": "`zai-glm-4.7`",
+      "context_label": "128K",
+      "rate_limit": "10 RPM, 100 RPD, 1M TPD"
+    },
+    {
+      "provider": "SiliconFlow",
+      "display_name": "tencent/Hunyuan-MT-7B",
+      "model_id": "`tencent-hunyuan-mt-7b`",
+      "context_label": "131K",
+      "rate_limit": "-"
+    },
+    {
+      "provider": "SiliconFlow",
+      "display_name": "XingChenAGI/Xing4.0-29B",
+      "model_id": "`xingchenagi-xing4-0-29b`",
+      "context_label": "131K",
+      "rate_limit": "-"
+    },
+    {
+      "provider": "SiliconFlow",
+      "display_name": "Abbreviation",
+      "model_id": "`abbreviation`",
+      "context_label": "131K",
+      "rate_limit": "See provider"
+    },
+    {
+      "provider": "Agnes AI",
+      "display_name": "agnes-1.5-flash",
+      "model_id": "`agnes-1.5-flash`",
+      "context_label": "256K",
+      "rate_limit": "30 RPM"
+    },
+    {
+      "provider": "Agnes AI",
+      "display_name": "agnes-2.0-flash",
+      "model_id": "`agnes-2.0-flash`",
+      "context_label": "256K",
+      "rate_limit": "30 RPM"
+    },
+    {
+      "provider": "Agnes AI",
+      "display_name": "agnes-image-2.0-flash",
+      "model_id": "`agnes-image-2.0-flash`",
+      "context_label": "4K",
+      "rate_limit": "30 RPM (1K)"
+    },
+    {
+      "provider": "Alibaba Cloud Model Studio",
+      "display_name": "Qwen3-Max",
+      "model_id": "`qwen3-max`",
+      "context_label": "128K",
+      "rate_limit": "Tiered by region"
+    },
+    {
+      "provider": "Alibaba Cloud Model Studio",
+      "display_name": "Qwen3-Plus",
+      "model_id": "`qwen3-plus`",
+      "context_label": "1M",
+      "rate_limit": "Tiered by region"
+    },
+    {
+      "provider": "Alibaba Cloud Model Studio",
+      "display_name": "Qwen3-VL-Plus",
+      "model_id": "`qwen3-vl-plus`",
+      "context_label": "128K",
+      "rate_limit": "Tiered by region"
+    },
+    {
+      "provider": "Gonka Broker",
+      "display_name": "MiniMaxAI/MiniMax-M2.7",
+      "model_id": "`minimaxai-minimax-m2-7`",
+      "context_label": "200K",
+      "rate_limit": "~1M tokens/mo"
+    },
+    {
+      "provider": "Gonka Broker",
+      "display_name": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "model_id": "`deepseek-ai-deepseek-v4-flash-0731`",
+      "context_label": "400K",
+      "rate_limit": "~1M tokens/mo"
+    },
+    {
+      "provider": "Gonka Broker",
+      "display_name": "zai-org/GLM-5.3-Flash",
+      "model_id": "`zai-org-glm-5-3-flash`",
+      "context_label": "400K",
+      "rate_limit": "~1M tokens/mo"
+    },
+    {
+      "provider": "SambaNova",
+      "display_name": "DeepSeek-V3.1",
+      "model_id": "`deepseek-v3-1`",
+      "context_label": "128K",
+      "rate_limit": "20 RPM, 20 RPD, 200K TPD"
+    },
+    {
+      "provider": "SambaNova",
+      "display_name": "DeepSeek-V3.2 (Preview)",
+      "model_id": "`deepseek-v3-2-preview`",
+      "context_label": "128K",
+      "rate_limit": "20 RPM, 20 RPD, 200K TPD"
+    },
+    {
+      "provider": "SambaNova",
+      "display_name": "MiniMax-M2.7",
+      "model_id": "`minimax-m2-7`",
+      "context_label": "128K",
+      "rate_limit": "20 RPM, 20 RPD, 200K TPD"
+    },
+    {
+      "provider": "xAI",
+      "display_name": "grok-4.3",
+      "model_id": "`grok-4-3`",
+      "context_label": "1M",
+      "rate_limit": "Credit-based"
+    },
+    {
+      "provider": "xAI",
+      "display_name": "grok-4.1-fast",
+      "model_id": "`grok-4-1-fast`",
+      "context_label": "2M",
+      "rate_limit": "Credit-based"
+    },
+    {
+      "provider": "xAI",
+      "display_name": "grok-3-mini",
+      "model_id": "`grok-3-mini`",
+      "context_label": "131K",
+      "rate_limit": "Credit-based"
+    },
+    {
+      "provider": "Cline",
+      "display_name": "Solar Mini 4",
+      "model_id": "`cline-free/solar-mini4`",
+      "context_label": "0",
+      "rate_limit": "See provider"
+    },
+    {
+      "provider": "Cline",
+      "display_name": "cline-free/nemotron-3.5-super-vl",
+      "model_id": "`cline-free/nemotron-3.5-super-vl`",
+      "context_label": "0",
+      "rate_limit": "See provider"
+    },
+    {
+      "provider": "Cline",
+      "display_name": "Nemotron 3.5 Lightning",
+      "model_id": "`nvidia/nemotron-3.5-lightning-free`",
+      "context_label": "0",
+      "rate_limit": "See provider"
+    },
+    {
+      "provider": "Chutes.ai",
+      "display_name": "DeepSeek-R1",
+      "model_id": "`deepseek-ai/DeepSeek-R1`",
+      "context_label": "131K",
+      "rate_limit": "Community-powered, no h.."
+    },
+    {
+      "provider": "Chutes.ai",
+      "display_name": "Llama 3.1 70B",
+      "model_id": "`meta-llama/Meta-Llama-3.1-70B-Instruct`",
+      "context_label": "131K",
+      "rate_limit": "Community-powered, no h.."
+    },
+    {
+      "provider": "Glhf.chat",
+      "display_name": "Llama 3.1 70B",
+      "model_id": "`meta-llama/Meta-Llama-3.1-70B-Instruct`",
+      "context_label": "131K",
+      "rate_limit": "Unlimited for free models"
+    },
+    {
+      "provider": "Glhf.chat",
+      "display_name": "Mixtral 8x7B",
+      "model_id": "`mistralai/Mixtral-8x7B-Instruct-v0.1`",
+      "context_label": "32K",
+      "rate_limit": "Unlimited for free models"
+    },
+    {
+      "provider": "Grok (xAI)",
+      "display_name": "Grok-2",
+      "model_id": "`grok-2`",
+      "context_label": "131K",
+      "rate_limit": "$25/month free credits,.."
+    },
+    {
+      "provider": "Grok (xAI)",
+      "display_name": "Grok-2 Mini",
+      "model_id": "`grok-2-mini`",
+      "context_label": "131K",
+      "rate_limit": "$25/month free credits,.."
+    },
+    {
+      "provider": "AI21 Labs",
+      "display_name": "Jamba Large 1.7",
+      "model_id": "`jamba-large-1-7`",
+      "context_label": "256K",
+      "rate_limit": "200 RPM, 10 RPS"
+    },
+    {
+      "provider": "AI21 Labs",
+      "display_name": "Jamba Mini 2",
+      "model_id": "`jamba-mini-2`",
+      "context_label": "256K",
+      "rate_limit": "200 RPM, 10 RPS"
+    },
+    {
+      "provider": "DeepSeek",
+      "display_name": "deepseek-chat (V3.2)",
+      "model_id": "`deepseek-chat-v3-2`",
+      "context_label": "128K",
+      "rate_limit": "Dynamic"
+    },
+    {
+      "provider": "DeepSeek",
+      "display_name": "deepseek-reasoner (R1)",
+      "model_id": "`deepseek-reasoner-r1`",
+      "context_label": "128K",
+      "rate_limit": "Dynamic"
+    },
+    {
+      "provider": "Nscale",
+      "display_name": "Llama-3.3-70B-Instruct",
+      "model_id": "`llama-3-3-70b-instruct`",
+      "context_label": "128K",
+      "rate_limit": "Fair-use"
+    },
+    {
+      "provider": "Nscale",
+      "display_name": "DeepSeek-R1-Distill-Llama-70B",
+      "model_id": "`deepseek-r1-distill-llama-70b`",
+      "context_label": "128K",
+      "rate_limit": "Fair-use"
+    },
+    {
+      "provider": "Nebius",
+      "display_name": "Qwen3-235B-A22B",
+      "model_id": "`qwen3-235b-a22b`",
+      "context_label": "128K",
+      "rate_limit": "Tier-based"
+    }
+  ],
+  "count": 85
+}

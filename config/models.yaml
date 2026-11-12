@@ -1,0 +1,120 @@
+models:
+  - provider: ollama
+    model_id: llama3.2:3b
+    display_name: Llama 3.2 3B (Local Ollama)
+    execution_mode: local
+    family: llama
+    capabilities: [general, planning, structured_json]
+    supports_json: true
+    supports_tools: true
+    context_window: 131072
+    is_free: true
+    enabled: true
+
+  - provider: groq
+    model_id: llama-3.3-70b-versatile
+    display_name: Llama 3.3 70B Versatile (Groq)
+    execution_mode: free_hosted
+    family: llama
+    capabilities: [coding, reasoning, general, structured_json]
+    supports_json: true
+    supports_tools: true
+    context_window: 131072
+    is_free: true
+    enabled: true
+
+  - provider: groq
+    model_id: qwen/qwen3-32b
+    display_name: Qwen 3 32B (Groq)
+    execution_mode: free_hosted
+    family: qwen
+    capabilities: [numerical, reasoning, structured_json]
+    supports_json: true
+    supports_tools: true
+    context_window: 131072
+    is_free: true
+    enabled: true
+
+  - provider: google_gemini
+    model_id: gemini-2.5-flash
+    display_name: Gemini 2.5 Flash (Google AI Studio)
+    execution_mode: free_hosted
+    family: gemini
+    capabilities: [long_context, research, synthesis, careful_reasoning, structured_json]
+    supports_json: true
+    supports_tools: true
+    context_window: 1048576
+    is_free: true
+    enabled: true
+
+  - provider: google_gemini
+    model_id: gemini-2.5-pro
+    display_name: Gemini 2.5 Pro (Google AI Studio)
+    execution_mode: free_hosted
+    family: gemini
+    capabilities: [strong_reasoning, judging, structured_json]
+    supports_json: true
+    supports_tools: true
+    context_window: 1048576
+    is_free: true
+    enabled: true
+
+  - provider: huggingface
+    model_id: deepseek-ai/DeepSeek-V3
+    display_name: DeepSeek V3 (HF Router)
+    execution_mode: free_hosted
+    family: deepseek
+    capabilities: [research, reasoning, structured_json]
+    supports_json: true
+    supports_tools: false
+    context_window: 131072
+    is_free: true
+    enabled: true
+
+  - provider: openrouter
+    model_id: deepseek/deepseek-r1:free
+    display_name: DeepSeek R1 Free (OpenRouter)
+    execution_mode: free_hosted
+    family: deepseek
+    capabilities: [critical_reasoning, judging, structured_json]
+    supports_json: true
+    supports_tools: false
+    context_window: 131072
+    is_free: true
+    enabled: true
+
+  - provider: openrouter
+    model_id: meta-llama/llama-3.3-70b-instruct:free
+    display_name: Llama 3.3 70B Free (OpenRouter)
+    execution_mode: free_hosted
+    family: llama
+    capabilities: [synthesis, general, structured_json]
+    supports_json: true
+    supports_tools: true
+    context_window: 131072
+    is_free: true
+    enabled: true
+
+  - provider: nvidia_nim
+    model_id: qwen/qwen2.5-coder-32b-instruct
+    display_name: Qwen 2.5 Coder 32B (NVIDIA NIM)
+    execution_mode: free_hosted
+    family: qwen
+    capabilities: [coding, technical, structured_json]
+    supports_json: true
+    supports_tools: false
+    context_window: 32768
+    is_free: true
+    enabled: true
+
+  - provider: nvidia_nim
+    model_id: deepseek-ai/deepseek-r1
+    display_name: DeepSeek R1 (NVIDIA NIM)
+    execution_mode: free_hosted
+    family: deepseek
+    capabilities: [critical_reasoning, adversarial_security]
+    supports_json: true
+    supports_tools: false
+    context_window: 128000
+    is_free: true
+    enabled: true

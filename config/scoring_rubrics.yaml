@@ -1,0 +1,79 @@
+readiness_gate:
+  weights:
+    topic_clarity: 20
+    prerequisite_completeness: 20
+    source_coverage: 20
+    source_quality: 20
+    information_freshness: 10
+    contradictions_identified: 10
+  thresholds:
+    ready: 75
+    ready_with_warnings: 55
+
+judge_scorecards:
+  general_decision:
+    technical_feasibility: 0.20
+    financial_feasibility: 0.15
+    market_user_value: 0.15
+    operational_feasibility: 0.15
+    legal_ethical_compliance: 0.10
+    security_safety: 0.10
+    evidence_strength: 0.10
+    long_term_sustainability: 0.05
+
+  business_feasibility:
+    technical_feasibility: 0.15
+    financial_feasibility: 0.25
+    market_user_value: 0.20
+    operational_feasibility: 0.15
+    legal_ethical_compliance: 0.08
+    security_safety: 0.07
+    evidence_strength: 0.05
+    long_term_sustainability: 0.05
+
+  technical_feasibility:
+    technical_feasibility: 0.30
+    financial_feasibility: 0.10
+    market_user_value: 0.08
+    operational_feasibility: 0.17
+    legal_ethical_compliance: 0.05
+    security_safety: 0.15
+    evidence_strength: 0.10
+    long_term_sustainability: 0.05
+
+  scientific_research:
+    technical_feasibility: 0.15
+    financial_feasibility: 0.05
+    market_user_value: 0.10
+    operational_feasibility: 0.10
+    legal_ethical_compliance: 0.12
+    security_safety: 0.08
+    evidence_strength: 0.30
+    long_term_sustainability: 0.10
+
+  product_evaluation:
+    technical_feasibility: 0.20
+    financial_feasibility: 0.15
+    market_user_value: 0.25
+    operational_feasibility: 0.12
+    legal_ethical_compliance: 0.08
+    security_safety: 0.10
+    evidence_strength: 0.05
+    long_term_sustainability: 0.05
+
+  policy_analysis:
+    technical_feasibility: 0.10
+    financial_feasibility: 0.12
+    market_user_value: 0.18
+    operational_feasibility: 0.15
+    legal_ethical_compliance: 0.20
+    security_safety: 0.10
+    evidence_strength: 0.10
+    long_term_sustainability: 0.05
+
+verdict_rules:
+  go_min_score: 75
+  conditional_go_min_score: 62
+  pilot_first_min_score: 50
+  pivot_min_score: 35
+  hard_blocker_max_verdict: CONDITIONAL_GO

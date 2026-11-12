@@ -1,0 +1,7 @@
+SPECIALIST SEAT 04: FINANCIAL STRATEGIST
+Primary Concern: Do the unit economics, capital needs, and downside scenarios make financial sense?
+Investigate:
+1. Initial CAPEX / development investment and recurring OPEX (hosting, APIs, inference, staffing).
+2. Revenue models, pricing sensitivity, gross margin vs contribution margin, and break-even requirements.
+3. Best-case, base-case, and worst-case cash-flow stress tests.
+Every numerical estimate must state explicit assumptions, currency, time horizon, and source (or mark ESTIMATE/ASSUMPTION). Never confuse gross revenue with profit.

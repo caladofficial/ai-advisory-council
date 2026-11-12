@@ -1,0 +1,137 @@
+cost_policy:
+  mode: zero_paid
+  allow_paid_providers: false
+  allow_credit_card_fallback: false
+  allow_over_quota_requests: false
+  local_inference:
+    enabled: true
+  free_hosted_apis:
+    enabled: true
+    require_verified_free_tier: true
+  on_quota_exhaustion: pause_and_checkpoint
+  on_provider_failure: try_verified_free_fallback
+  on_no_available_models: request_user_action
+
+providers:
+  ollama:
+    display_name: Ollama (Local)
+    protocol: ollama
+    base_url: http://localhost:11434/v1
+    native_url: http://localhost:11434
+    api_key_env: null
+    is_free_tier: true
+    requires_credit_card: false
+    default_rpm: 120
+    default_rpd: 100000
+    notes: Unlimited private local execution; zero API cost.
+
+  groq:
+    display_name: Groq
+    protocol: openai_compatible
+    base_url: https://api.groq.com/openai/v1
+    api_key_env: GROQ_API_KEY
+    api_key_url: https://console.groq.com/keys
+    is_free_tier: true
+    requires_credit_card: false
+    default_rpm: 30
+    default_rpd: 14400
+
+  google_gemini:
+    display_name: Google Gemini
+    protocol: openai_compatible
+    base_url: https://generativelanguage.googleapis.com/v1beta/openai/
+    api_key_env: GOOGLE_API_KEY
+    api_key_url: https://aistudio.google.com/app/apikey
+    is_free_tier: true
+    requires_credit_card: false
+    default_rpm: 15
+    default_rpd: 500
+
+  huggingface:
+    display_name: Hugging Face Inference Providers
+    protocol: openai_compatible
+    base_url: https://router.huggingface.co/v1
+    api_key_env: HF_TOKEN
+    api_key_url: https://huggingface.co/settings/tokens
+    is_free_tier: true
+    requires_credit_card: false
+    default_rpm: 20
+    default_rpd: 1000
+
+  nvidia_nim:
+    display_name: NVIDIA NIM
+    protocol: openai_compatible
+    base_url: https://integrate.api.nvidia.com/v1
+    api_key_env: NVIDIA_API_KEY
+    api_key_url: https://build.nvidia.com/settings/api-keys
+    is_free_tier: true
+    requires_credit_card: false
+    default_rpm: 40
+    default_rpd: 2000
+
+  openrouter:
+    display_name: OpenRouter (Free Models Only)
+    protocol: openai_compatible
+    base_url: https://openrouter.ai/api/v1
+    api_key_env: OPENROUTER_API_KEY
+    api_key_url: https://openrouter.ai/workspaces/default/keys
+    is_free_tier: true
+    requires_credit_card: false
+    free_model_suffix_required: ":free"
+    default_rpm: 20
+    default_rpd: 200
+
+  modelscope:
+    display_name: Alibaba ModelScope
+    protocol: openai_compatible
+    base_url: https://api-inference.modelscope.cn/v1
+    api_key_env: MODELSCOPE_API_KEY
+    api_key_url: https://modelscope.cn/my/myaccesstoken
+    is_free_tier: true
+    requires_credit_card: false
+    default_rpm: 20
+    default_rpd: 2000
+
+  mistral:
+    display_name: Mistral AI
+    protocol: openai_compatible
+    base_url: https://api.mistral.ai/v1
+    api_key_env: MISTRAL_API_KEY
+    api_key_url: https://console.mistral.ai/api-keys
+    is_free_tier: true
+    requires_credit_card: false
+    default_rpm: 15
+    default_rpd: 1000
+
+  cerebras:
+    display_name: Cerebras
+    protocol: openai_compatible
+    base_url: https://api.cerebras.ai/v1
+    api_key_env: CEREBRAS_API_KEY
+    api_key_url: https://cloud.cerebras.ai/
+    is_free_tier: true
+    requires_credit_card: false
+    default_rpm: 10
+    default_rpd: 100
+
+  sambanova:
+    display_name: SambaNova
+    protocol: openai_compatible
+    base_url: https://api.sambanova.ai/v1
+    api_key_env: SAMBANOVA_API_KEY
+    api_key_url: https://cloud.sambanova.ai/apis
+    is_free_tier: true
+    requires_credit_card: false
+    default_rpm: 20
+    default_rpd: 20
+
+  cohere:
+    display_name: Cohere
+    protocol: openai_compatible
+    base_url: https://api.cohere.ai/compatibility/v1
+    api_key_env: COHERE_API_KEY
+    api_key_url: https://dashboard.cohere.com/api-keys
+    is_free_tier: true
+    requires_credit_card: false
+    default_rpm: 20
+    default_rpd: 33

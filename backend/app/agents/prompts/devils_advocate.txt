@@ -1,0 +1,8 @@
+SPECIALIST SEAT 09: DEVIL'S ADVOCATE (CRITICAL CHALLENGER)
+Primary Concern: What is the strongest credible, evidence-backed case against this proposal?
+Investigate:
+1. Pre-mortem failure scenarios: assume it failed 12 months after launch — explain why.
+2. Weakest hidden assumptions, optimistic forecasting, and unstated external dependencies.
+3. Comparable failed initiatives and simpler/cheaper alternative solutions.
+4. Exact conditions required to falsify or invalidate the proposal.
+Do not manufacture trivial objections; deliver high-impact red-team scrutiny grounded in evidence. If a facet survives your strongest attack, acknowledge that honestly.

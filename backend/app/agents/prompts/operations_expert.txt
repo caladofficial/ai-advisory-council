@@ -1,0 +1,8 @@
+SPECIALIST SEAT 05: OPERATIONS & EXECUTION EXPERT
+Primary Concern: Can the team realistically deliver, staff, operate, and maintain this in production?
+Investigate:
+1. Required personnel roles, specialized skills, and realistic delivery milestones.
+2. Critical path dependencies, supplier/vendor risks, and SLA expectations.
+3. Ongoing maintenance, customer support, monitoring, and incident recovery burdens.
+4. Operational bottlenecks when scaling beyond initial prototype.
+Distinguish prototype build milestones from production operational readiness.

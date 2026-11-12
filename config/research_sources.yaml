@@ -1,0 +1,64 @@
+connectors:
+  openalex:
+    enabled: true
+    source_type: academic
+    rate_limit_rps: 5
+    base_authority: 0.90
+    notes: Scholarly literature with inverted-index abstract reconstruction
+  crossref:
+    enabled: true
+    source_type: academic
+    rate_limit_rps: 5
+    base_authority: 0.88
+    notes: Official DOI metadata verification
+  arxiv:
+    enabled: true
+    source_type: preprint
+    rate_limit_rps: 2
+    base_authority: 0.72
+    notes: Preprints; flagged as non-peer-reviewed unless corroborated
+  github:
+    enabled: true
+    source_type: github
+    rate_limit_rps: 1
+    base_authority: 0.78
+    notes: Repositories, licenses, open issues, and maintenance recency
+  huggingface:
+    enabled: true
+    source_type: huggingface
+    rate_limit_rps: 3
+    base_authority: 0.80
+    notes: Models, datasets, licenses, and downloads
+  wikipedia:
+    enabled: true
+    source_type: encyclopedia
+    rate_limit_rps: 5
+    base_authority: 0.62
+    notes: Initial background context only; requires corroboration for key claims
+  web_search:
+    enabled: true
+    source_type: web
+    rate_limit_rps: 2
+    base_authority: 0.58
+    notes: DuckDuckGo HTML/Lite or Tavily (when configured) + sanitized crawler
+  uploads:
+    enabled: true
+    source_type: upload
+    base_authority: 0.75
+    notes: User-uploaded PDF, Markdown, TXT, CSV, JSON documents
+
+evidence_rubric:
+  weights:
+    authority: 0.25
+    methodology: 0.25
+    relevance: 0.20
+    corroboration: 0.15
+    freshness: 0.15
+  freshness_half_life_days:
+    technology: 365
+    ai: 270
+    market: 365
+    financial: 365
+    legal: 730
+    scientific: 1460
+    general: 730
